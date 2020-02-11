@@ -12,7 +12,7 @@ public class Runner {
 	}
 
 	public void run() {
-		System.out.println("Now do the queries with the template " + template);
+		System.out.println("Now execute the queries with the template " + template);
 	}
 	
 	

@@ -7,11 +7,9 @@ import com.gen.config.AppConfig;
 
 public class Main {
 
-	public static void main(String[] args) {
-		
-		ApplicationContext ctx = new AnnotationConfigApplicationContext(AppConfig.class);
-		
+	public static void main(String[] args) {		
+		ApplicationContext ctx = new AnnotationConfigApplicationContext(AppConfig.class);		
 		Runner runner = ctx.getBean(Runner.class);
-		runner.run();		
+		runner.run();
 	}
 }

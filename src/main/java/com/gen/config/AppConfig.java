@@ -34,6 +34,10 @@ public class AppConfig {
 		dataSource.setInitialPoolSize(5);
 		return dataSource;
 	}
-	
+
+	@Bean
+	public DBConfig getDBConfig() {
+		return new DBConfig(username, password);
+	}
 	
 }
